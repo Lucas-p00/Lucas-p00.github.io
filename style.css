@@ -1,0 +1,284 @@
+/* Estilos Gerais */
+
+:root {
+    /*Color mode HSL(hue, saturation, lightness)*/
+    /*
+        Blue: hsl(207, 90%, 61%)
+        Purple: hsl(250, 66%, 75%)
+        Pink: hsl(356, 66%, 75%)
+        Teal: hsl(174, 63%, 62%)
+    */
+  
+    --hue: 207;
+    --sat: 90%;
+    --lig: 61%;
+    --first-color: hsl(var(--hue), var(--sat), var(--lig));
+    --first-color-alt: hsl(var(--hue), var(--sat), 57%);
+    /* -4% */
+    --title-color: #ffffff;
+    --text-color: #ffffff;
+    --text-color: hsl(var(--hue), 12%, 45%);
+    --text-color-light: hsl(var(--hue), 8%, 75%);
+    --text-color-lighten: hsl(var(--hue), 8%, 92%);
+    --body-color: hsl(var(--hue), 100%, 99%);
+    --container-color: #fff;
+  
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: 'Poppins', sans-serif;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0c151d;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Seção Sobre Mim */
+#sobre {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-mim {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.sobre-mim::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0c151d;
+    z-index: 1;
+}
+
+.sobre-conteudo {
+    /* position: relative;
+    z-index: 2;
+    align-items: center; */
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.sobre-conteudo h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border: 3px solid white;
+}
+
+.profile__name {
+    font-size: var(--h2-font-size);
+  }
+  
+  .profile__profession {
+    /* font-size: var(--smaller-font-size); */
+    font-weight: 500;
+    /* color: var(--text-color); */
+    margin-bottom: 1rem;
+  }
+
+.profile__social {
+    display: flex;
+    justify-content: center;
+    column-gap: .75rem;
+    align-items: center;   
+    padding: 0;             
+    list-style: none;  
+}
+  
+.profile__social-link {
+    font-size: 1.75rem;
+    color: var(--title-color);
+    transition: .3s;
+}
+  
+.profile__social-link:hover {
+    color: var(--first-color);
+}
+
+/* Seção de Tecnologias */
+#tecnologias {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#tecnologias h2 {
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.tech-icons {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;
+}
+
+.tech-icons-cl1, .tech-icons-cl2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.icon {
+    margin: 0 15px;
+}
+
+.icon img {
+    /* width: 50px; */
+    height: 30px;
+}
+
+.icon:hover img {
+    transform: scale(1.1);
+}
+
+/* Seção de Projetos */
+#projetos {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#projetos h2 {
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.project-category {
+    margin-bottom: 50px;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-box {
+    background-color: #007072;
+    background-color: #003f4e;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.project-info p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.project-button {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+}
+
+.project-box:hover img {
+    transform: scale(1.1);
+}
+
+.project-box:hover .project-button {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Demais */
+
+hr {
+    width: 80%;
+}
+
+
+/* Seção de Contato */
+#contato {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#contato h2 {
+    margin-bottom: 20px;
+}
+
+.contato-conteudo p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contato-lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contato-lista li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contato-lista i {
+    margin-right: 10px;
+}
+
+.contato-lista a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contato-lista a:hover {
+    text-decoration: underline;
+}
