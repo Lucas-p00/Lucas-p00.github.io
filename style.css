@@ -304,3 +304,77 @@ h2 {
 hr {
     width: 80%;
 }
+
+
+
+
+
+
+
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    /* Ajustes para telas menores (tablets e smartphones) */
+    .sobre-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto-perfil {
+        width: 150px;
+        margin: 0 0 20px 0;
+    }
+
+    .profile__social {
+        justify-content: center;
+    }
+
+    .tech-icons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .icon {
+        width: 80px;
+    }
+
+    .icon img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .skills__name {
+        font-size: 12px;
+    }
+
+    /* Ajustar a largura de outros elementos */
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Ajustes para telas ainda menores (smartphones em retrato) */
+    .foto-perfil {
+        width: 120px;
+    }
+
+    .profile__social-link {
+        font-size: 20px;
+    }
+
+    .tech-icons {
+        gap: 15px;
+    }
+
+    .icon img {
+        width: 40px;
+        height: 40px;
+    }
+}
