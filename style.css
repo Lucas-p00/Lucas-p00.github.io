@@ -135,7 +135,8 @@ h2 {
 } */
 
 #tecnologias h1 {
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: 1.875rem;
     margin-bottom: 30px;
 }
 
@@ -199,7 +200,14 @@ h2 {
 }
 
 #projetos h1 {
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: 1.875rem;
+    margin-bottom: 30px;
+}
+
+#projetos h2 {
+    /* font-size: 30px; */
+    font-size: 1.563rem;
     margin-bottom: 30px;
 }
 
