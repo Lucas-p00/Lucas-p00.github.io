@@ -8,7 +8,7 @@
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
     */
-  
+
     --hue: 207;
     --sat: 90%;
     --lig: 61%;
@@ -22,18 +22,10 @@
     --text-color-lighten: hsl(var(--hue), 8%, 92%);
     --body-color: hsl(var(--hue), 100%, 99%);
     --container-color: #fff;
-  
-    /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: 'Poppins', sans-serif;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
-  }
+}
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Exo 2', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #0c151d;
@@ -42,6 +34,11 @@ body {
 
 a {
     text-decoration: none;
+}
+
+h1,
+h2 {
+    font-family: 'Merriweather', serif;
 }
 
 /* Seção Sobre Mim */
@@ -80,7 +77,7 @@ a {
     z-index: 2;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 .sobre-conteudo h1 {
@@ -99,30 +96,28 @@ a {
 
 .profile__name {
     font-size: var(--h2-font-size);
-  }
-  
-  .profile__profession {
-    /* font-size: var(--smaller-font-size); */
+}
+
+.profile__profession {
     font-weight: 500;
-    /* color: var(--text-color); */
     margin-bottom: 1rem;
-  }
+}
 
 .profile__social {
     display: flex;
     justify-content: center;
     column-gap: .75rem;
-    align-items: center;   
-    padding: 0;             
-    list-style: none;  
+    align-items: center;
+    padding: 0;
+    list-style: none;
 }
-  
+
 .profile__social-link {
     font-size: 1.75rem;
     color: var(--title-color);
     transition: .3s;
 }
-  
+
 .profile__social-link:hover {
     color: var(--first-color);
 }
@@ -133,35 +128,67 @@ a {
     text-align: center;
 }
 
-#tecnologias h2 {
+/* #tecnologias h2 {
     margin-bottom: 50px;
     margin-top: 10px;
+} */
+
+#tecnologias h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
 }
 
-.tech-icons {
+/* .tech-icons {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     gap: 20px;
+} */
+
+.tech-icons {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    justify-items: center;
 }
 
-.tech-icons-cl1, .tech-icons-cl2 {
+.tech-icons h5 {
+    color: #ffffff;
+}
+
+/* .tech-icons-cl1,
+.tech-icons-cl2 {
     display: flex;
     justify-content: center;
     gap: 10px;
-}
+} */
+
+/* .icon {
+    margin: 0 15px;
+} */
 
 .icon {
-    margin: 0 15px;
+    text-align: center;
 }
 
 .icon img {
     /* width: 50px; */
     height: 30px;
+    transition: transform 0.2s ease-in-out;
+    /*add*/
 }
 
 .icon:hover img {
     transform: scale(1.1);
+}
+
+.skills__name {
+    /*add*/
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #333;
 }
 
 /* Seção de Projetos */
@@ -170,8 +197,14 @@ a {
     text-align: center;
 }
 
-#projetos h2 {
-    margin-bottom: 50px;
+#projetos h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#projetos h3 {
+    /* margin-bottom: 50px; */
+    margin-bottom: 20px;
     margin-top: 10px;
 }
 
@@ -179,12 +212,22 @@ a {
     margin-bottom: 50px;
 }
 
-.projects-grid {
+/* .projects-grid {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+} */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    justify-items: center;
+    width: 50%;
+    margin: 0 auto;
 }
+
 
 .project-box {
     background-color: #007072;
@@ -204,13 +247,23 @@ a {
 }
 
 .project-info {
-    padding: 15px;
+    /* padding: 15px; */
+    padding: 0.938rem;
     text-align: center;
 }
 
 .project-info p {
     margin: 0;
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 1rem;
+}
+
+.project-tech {
+    /* margin-bottom: 20px; */
+    margin-bottom: 1.25rem;
+    padding: 0;
+    font-size: 0.9rem;
+    color: #95c8ff;
 }
 
 .project-button {
@@ -241,44 +294,4 @@ a {
 
 hr {
     width: 80%;
-}
-
-
-/* Seção de Contato */
-#contato {
-    padding: 50px 0;
-    text-align: center;
-    background-color: #ffffff;
-}
-
-#contato h2 {
-    margin-bottom: 20px;
-}
-
-.contato-conteudo p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.contato-lista {
-    list-style-type: none;
-    padding: 0;
-}
-
-.contato-lista li {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.contato-lista i {
-    margin-right: 10px;
-}
-
-.contato-lista a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.contato-lista a:hover {
-    text-decoration: underline;
 }
