@@ -5,24 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Pinheiro</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <!-- Seção Sobre Mim -->
-    <section id="sobre" class="sobre-mim">
+    <!-- HEADER -->
+    <header>
+        <a href="#" class="logo">Portfólio</a>
+        <div class="nav">
+            <a href="#home">Home</a>
+            <a href="#myskills">Skills</a>
+            <a href="#projects">Projects</a>
+            <!-- <a href="#contact">Contact</a> -->
+        </div>
+
+        <div class="nav_responsive">
+            <a href="#home">Home</a>
+            <a href="#myskills">Skills</a>
+            <a href="#projects">Projects</a>
+            <!-- <a href="#contact">Contact</a> -->
+        </div>
+
+        <div class="menu-hamburguer">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+    </header>
+    <!-- /HEADER -->
+
+    <!-- Home section -->
+    <section class="sobre-mim" id="home">
         <div class="sobre-conteudo">
             <img src="assets/foto-perfil.jpg" alt="Foto" class="foto-perfil">
             <div class="info">
-                <h1>Lucas Pinheiro</h1>
-                <!-- <h4>Data Science / Machine Learning / Hardware</h4> -->
-                <!-- <h2 class="profile__name">Lucas Pinheiro</h2> -->
-                <h4 class="profile__profession">Data Analysis / Data Science / Machine Learning / Hardware</h4>
-                <ul class="profile__social">
+                <h1 class="profile_name">Lucas Pinheiro</h1>
+                <p class="profile_profession">Data Analysis • Data Science • Machine Learning • Hardware</p>
+                <p class="profile_resumo">Engenheiro de Computação com experiência no desenvolvimento de projetos na área de Ciência de Dados, Machine Learning, Sistemas Embarcados e IoT.</p>    
+                <div class="profile_social">
                     <a href="https://www.linkedin.com/in/lucaspinheiro00/" target="_blank" class="profile__social-link">
                         <i class="ri-linkedin-box-line"></i>
                     </a>
@@ -34,211 +60,115 @@
                     </a>
                     <a href="mailto:lucas.pinheiroo.eng@gmail.com" target="_blank" class="profile__social-link">
                         <i class="ri-mail-line"></i>
-                    </a>
-                </ul>
+                    </a>                   
+                </div>
+            </div>
+            <div>
+                <a href="#" class="btn">Download CV</a>
             </div>
         </div>
     </section>
+    <!-- /Home section -->
 
-    <hr />
-
-    <!-- Seção de Tecnologias -->
-    <!-- <section id="tecnologias">
-        <h2>Tecnologias</h2>
-        <div class="tech-icons">
-            <div class="tech-icons-cl1">
-                <div class="icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python"
-                        title="Python">
-                    <h5 class="skills__name">Python</h5>
-                </div>
-                <div class="icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" alt="Jupyter"
-                        title="Jupyter">
-                    <h5 class="skills__name">Jupyter</h5>
-                </div>
-                <div class="icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg"
-                        alt="Colab" title="Colab">
-                    <h5 class="skills__name">Google Colab</h5>
-                </div>
-                <div class="icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI"
-                        title="Power BI">
-                    <h5 class="skills__name">Power BI</h5>
-                </div>
-                <div class="icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
-                        alt="MySQL" title="MySQL">
-                    <h5 class="skills__name">MySQL</h5>
-                </div>
-                <div class="icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
-                        alt="Scikit-learn" title="Scikit-learn">
-                    <h5>Scikit-learn</h5>
-                </div>
-                <div class="icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib"
-                        title="Matplotlib">
-                    <h5 class="skills__name">Matplotlib</h5>
-                </div>
-            </div>
-            <div class="tech-icons-cl2">
-                <div class="icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Pandas_mark.svg" alt="Pandas"
-                        title="Pandas">
-                    <h5 class="skills__name">Pandas</h5>
-                </div>
-                <div class="icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" alt="NumPy"
-                        title="NumPy">
-                    <h5 class="skills__name">NumPy</h5>
-                </div>
-                <div class="icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg" alt="TensorFlow"
-                        title="TensorFlow">
-                    <h5 class="skills__name">TensorFlow</h5>
-                </div>
-
-                <div class="icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" alt="Keras"
-                        title="Keras">
-                    <h5 class="skills__name">Keras</h5>
-                </div>
-
-                <div class="icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg" alt="Arduino"
-                        title="Arduino">
-                    <h5 class="skills__name">Arduino</h5>
-                </div>
-                <div class="icon">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/c/cb/Raspberry_Pi_Logo.svg" alt="Raspberry Pi"
-                        title="Raspberry Pi">
-                    <h5 class="skills__name">Raspberry Pi</h5>
-                </div>
-                <div class="icon">
-                    <img src="assets/esp32.png" alt="ESP32" title="ESP32">
-                    <h5 class="skills__name">ESP32</h5>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <section id="tecnologias">
-        <h1>TECNOLOGIAS</h1>
+    <!-- Tecnologias Section -->
+    <section class="tecnologias" id="myskills">
+        <!-- <h1>TECNOLOGIAS</h1> -->
+        <h1>MY <span>SKILLS</span></h1>
         <div class="tech-icons">
             <div class="icon">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python"
                     title="Python">
-                <h5 class="skills__name">Python</h5>
+                <h5 class="techs_name">Python</h5>
             </div>
             <div class="icon">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" alt="Jupyter"
                     title="Jupyter">
-                <h5 class="skills__name">Jupyter</h5>
+                <h5 class="techs_name">Jupyter</h5>
             </div>
             <div class="icon">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg"
                     alt="Colab" title="Colab">
-                <h5 class="skills__name">Google Colab</h5>
+                <h5 class="techs_name">Google Colab</h5>
             </div>
             <div class="icon">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI"
                     title="Power BI">
-                <h5 class="skills__name">Power BI</h5>
+                <h5 class="techs_name">Power BI</h5>
             </div>
             <div class="icon">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
                     alt="MySQL" title="MySQL">
-                <h5 class="skills__name">MySQL</h5>
+                <h5 class="techs_name">MySQL</h5>
             </div>
             <div class="icon">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"
                     alt="Scikit-learn" title="Scikit-learn">
-                <h5 class="skills__name">Scikit-learn</h5>
+                <h5 class="techs_name">Scikit-learn</h5>
             </div>
             <div class="icon">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" alt="Matplotlib"
                     title="Matplotlib">
-                <h5 class="skills__name">Matplotlib</h5>
+                <h5 class="techs_name">Matplotlib</h5>
             </div>
             <div class="icon">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Pandas_mark.svg" alt="Pandas"
                     title="Pandas">
-                <h5 class="skills__name">Pandas</h5>
+                <h5 class="techs_name">Pandas</h5>
             </div>
             <div class="icon">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" alt="NumPy"
                     title="NumPy">
-                <h5 class="skills__name">NumPy</h5>
+                <h5 class="techs_name">NumPy</h5>
             </div>
             <div class="icon">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg" alt="TensorFlow"
                     title="TensorFlow">
-                <h5 class="skills__name">TensorFlow</h5>
+                <h5 class="techs_name">TensorFlow</h5>
             </div>
             <div class="icon">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" alt="Keras" title="Keras">
-                <h5 class="skills__name">Keras</h5>
+                <h5 class="techs_name">Keras</h5>
             </div>
             <div class="icon">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg" alt="Arduino"
                     title="Arduino">
-                <h5 class="skills__name">Arduino</h5>
+                <h5 class="techs_name">Arduino</h5>
             </div>
             <div class="icon">
                 <img src="https://upload.wikimedia.org/wikipedia/en/c/cb/Raspberry_Pi_Logo.svg" alt="Raspberry Pi"
                     title="Raspberry Pi">
-                <h5 class="skills__name">Raspberry Pi</h5>
+                <h5 class="techs_name">Raspberry Pi</h5>
             </div>
             <div class="icon">
                 <img src="assets/esp32.png" alt="ESP32" title="ESP32">
-                <h5 class="skills__name">ESP32</h5>
+                <h5 class="techs_name">ESP32</h5>
             </div>
         </div>
     </section>
+    <!-- /Tecnologias Section -->
 
-
-    <hr />
-
-    <!-- Seção de Projetos -->
-    <section id="projetos">
-        <h1>PROJETOS</h1>
+    <!-- Projetos Section -->
+    <section class="projetos" id="projects">
+        <h1>MY <span>PROJECTS</span></h1>
         <div class="project-category">
-            <h2>Power BI</h2>
+            <h2 class="project_category_name">Data Science</h2>
             <div class="projects-grid">
                 <div class="project-box">
-                    <img src="assets/projetos/pbi-grupos_pesquisa.png" alt="Projeto 1">
+                    <img src="assets/projetos/cd-data_somelier.png" alt="Projeto 4">
                     <div class="project-info">
-                        <h3>Levantamento de Dados</h3>
-                        <h5 class="project-tech">Power BI • CSV</h5>
-                        <p>Dashboard desenvolvido para apresentar os grupos de pesquisa da UNILAB.</p>
-                        <a href="https://app.powerbi.com/view?r=eyJrIjoiOTYyMjMwNmUtMTg5Ny00M2U1LTgyZDAtMGExMTU3YzY0ZWQ2IiwidCI6IjkwMjlkZGNlLWFmMTItNDJiZS04MDM3LTU4MzEzZTRkYzVkMSJ9"
-                            target="_blank" class="project-button">Ver Projeto</a>
-                    </div>
-                </div>
-                <div class="project-box">
-                    <img src="assets/projetos/pbi-financeiro.png" alt="Projeto 2">
-                    <div class="project-info">
-                        <h3>Relatório Financeiro</h3>
-                        <h5 class="project-tech">Power BI • Excel</h5>
+                        <h3 class="project_name">Análise e Predição de Dados de Vinhos Espanhóis</h3>
+                        <h5 class="project-tech">Numpy • Pandas • Matplotlib • Scikit-learn</h5>
                         <p>
-                            Dashboard desenvolvido durante a Maratona de PowerBI oferecido pela Hashtag.
+                            Projeto desenvolvido no Bootcamp de Ciência de Dados oferecido pela Avanti.
                         </p>
-                        <a href="https://github.com/Lucas-p00/Power-BI-projects/tree/main/Dashboard%20Financeiro"
-                            target="_blank" class="project-button">Ver Projeto</a>
+                        <a href="https://github.com/atlantico-academy/equipe5-2024.3" target="_blank"
+                            class="project-button">Ver Projeto</a>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="project-category">
-            <h2>Data Science</h2>
-            <div class="projects-grid">
                 <div class="project-box">
                     <img src="assets/projetos/cd-regressao_linear.png" alt="Projeto 3">
                     <div class="project-info">
-                        <h3>Regressão Linear</h3>
+                        <h3 class="project_name">Regressão Linear</h3>
                         <h5 class="project-tech">Python • Numpy • Pandas • Matplotlib</h5>
                         <p>
                             Projeto de Regressão Linear para prever o salário de uma pessoa baseado no seu tempo
@@ -248,28 +178,16 @@
                             target="_blank" class="project-button">Ver Projeto</a>
                     </div>
                 </div>
-                <div class="project-box">
-                    <img src="assets/projetos/cd-data_somelier.png" alt="Projeto 4">
-                    <div class="project-info">
-                        <h3>Análise e Predição de Dados de Vinhos Espanhóis</h3>
-                        <h5 class="project-tech">Numpy • Pandas • Matplotlib • Scikit-learn</h5>
-                        <p>
-                            Projeto desenvolvido no Bootcamp de Ciência de Dados oferecido pela Avanti.
-                        </p>
-                        <a href="https://github.com/atlantico-academy/equipe5-2024.3" target="_blank"
-                            class="project-button">Ver Projeto</a>
-                    </div>
-                </div>
             </div>
         </div>
 
         <div class="project-category">
-            <h2>Machine Learning & Visão Computacional</h2>
+            <h2 class="project_category_name">Machine Learning & Visão Computacional</h2>
             <div class="projects-grid">
                 <div class="project-box">
                     <img src="assets/projetos/ml-road_segmentation.png" alt="Projeto 5">
                     <div class="project-info">
-                        <h3>Segmentação de Estradas e Ruas</h3>
+                        <h3 class="project_name">Segmentação de Estradas e Ruas</h3>
                         <h5 class="project-tech">Matplotlib • OpenCV • Scikit-learn • TensorFlow • Keras</h5>
                         <p>
                             Projeto desenvolvido no Bootcamp de Machine Learning oferecido
@@ -282,7 +200,7 @@
                 <div class="project-box">
                     <img src="assets/projetos/ml-drowsiness_Detection.png" alt="Projeto 6">
                     <div class="project-info">
-                        <h3>Protótipo para detecção de sono ao volante</h3>
+                        <h3 class="project_name">Protótipo para detecção de sono ao volante</h3>
                         <h5 class="project-tech">Python • Raspberry Pi • OpenCV</h5>
                         <p>Projeto desenvolvido para o Trabalho de Conclusão do Curso de Engenharia de Computação.
                             For utilizadas técnicas de Visão Computacional e Raspberry Pi.
@@ -293,8 +211,38 @@
                 </div>
             </div>
         </div>
+
+        <div class="project-category">
+            <h2 class="project_category_name">Power BI</h2>
+            <div class="projects-grid">
+                <div class="project-box">
+                    <img src="assets/projetos/pbi-grupos_pesquisa.png" alt="Projeto 1">
+                    <div class="project-info">
+                        <h3 class="project_name">Levantamento de Dados</h3>
+                        <h5 class="project-tech">Power BI • CSV</h5>
+                        <p>Dashboard desenvolvido para apresentar os grupos de pesquisa da UNILAB.</p>
+                        <a href="https://app.powerbi.com/view?r=eyJrIjoiOTYyMjMwNmUtMTg5Ny00M2U1LTgyZDAtMGExMTU3YzY0ZWQ2IiwidCI6IjkwMjlkZGNlLWFmMTItNDJiZS04MDM3LTU4MzEzZTRkYzVkMSJ9"
+                            target="_blank" class="project-button">Ver Projeto</a>
+                    </div>
+                </div>
+                <div class="project-box">
+                    <img src="assets/projetos/pbi-financeiro.png" alt="Projeto 2">
+                    <div class="project-info">
+                        <h3 class="project_name">Relatório Financeiro</h3>
+                        <h5 class="project-tech">Power BI • Excel</h5>
+                        <p>
+                            Dashboard desenvolvido durante a Maratona de PowerBI oferecido pela Hashtag.
+                        </p>
+                        <a href="https://github.com/Lucas-p00/Power-BI-projects/tree/main/Dashboard%20Financeiro"
+                            target="_blank" class="project-button">Ver Projeto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 </body>
+
+<script src="js/script.js"></script>
 
 </html>
